@@ -1,0 +1,51 @@
+main{
+    display: grid;
+    grid-template-areas: "h h h" 
+                         "n n n"
+                         "ar ar ar"
+                         "f f f";
+    grid-gap: 20px;
+}
+
+
+.galeria{
+    display: grid;
+    margin: auto;
+    grid-gap: 20px;
+    grid-template-columns: 300px 300px 300px;
+    grid-area: ar;
+    background-color: white;
+    border: none;
+
+}
+img {
+    width: 100%;
+}
+.kep {
+    border: 5px solid rgb(33, 136, 177);  
+    border-radius: 5px;  
+}
+
+@media screen and (max-width:600px) {
+    main{   
+        grid-template-areas: "h" 
+                             "n"
+                             "as"
+                             "ar"
+                             "f";
+        
+    }
+    .galeria{
+        grid-template-columns: 1fr 1fr;
+    }
+    nav ul li{
+        padding-bottom: 10px;
+        margin-right: 0px;
+    }
+    nav ul{
+        display: block;
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    
+}
